@@ -1,0 +1,13 @@
+function drawRectangle() {
+    var length = document.getElementById('length').value;
+    var width = document.getElementById('width').value;
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+
+    // キャンバスをクリア
+    context.clearRect(0, 0, canvas.width, canvas.height);
+
+    // 長方形を描画
+    context.fillStyle = 'blue';
+    context.fillRect(10, 10, width * 20, length * 20);
+}
